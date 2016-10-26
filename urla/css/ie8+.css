@@ -1,0 +1,14 @@
+@media only screen and (min-width: 768px) {
+
+	.owl-next {
+		margin-right: -230px;
+	}
+
+}
+@media only screen and (min-width: 1440px) {
+
+	.owl-next {
+		margin-right: -300px;
+	}
+
+}

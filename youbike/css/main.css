@@ -1,0 +1,188 @@
+@font-face {
+	font-family: 'helvetica';
+	src: url('../fonts/helveticaneue-thin-webfont.eot');
+	src: url('../fonts/helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+	url('../fonts/helveticaneue-thin-webfont.woff') format('woff'),
+	url('../fonts/helveticaneue-thin-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+.box{
+	height: 1064px;
+	width: 100%;
+	background: url(../img/background.jpg);
+	background-size: cover;
+	font-family: helvetica;
+	font-size: 14px;
+}
+
+nav{
+	float: right;
+	display: inline-block;
+	width: 100%;
+	height: 36px;
+	background: #085495;
+}
+
+.header_buttons, .top_registration, .select_button{
+	color: white;
+	padding: 4px;
+}
+
+.head_menu, .select_button, .top_registration{
+	float: right;
+}
+
+.header_buttons{
+	display: inline-block;
+	float: left;
+}
+
+.header_buttons, .top_registration{
+	padding: 11px;
+}
+
+.header_buttons a{
+	color: #a1e0ff;
+}
+
+.top_registration{
+	background-image: url(../img/buttons.png);
+}
+
+.top_registration a{
+	text-decoration: underline;
+}
+
+.top_registration a:hover{
+	color: #a1e0ff;
+}
+
+.header_buttons a, .select_button a{
+	padding: 10px;
+}
+
+.header_buttons a:hover, .select_button a:hover{
+	background-image: url(../img/buttons.png);
+}
+
+.header_buttons a:hover{
+	color: white;
+}
+
+.select_button img{
+	margin: 3px 15px -7px 0px;
+}
+
+.top_border{
+	border-right: 1px solid #56a2dc;
+}
+
+h1{
+	font-size: 24px;
+}
+
+.clearfix:before{
+	content: "";
+	display: inline-block;
+}
+
+.form_main{
+	height: 612px;
+	width: 560px;
+	margin: 200px auto;
+}
+
+.form_description{
+	width: 560px;
+	text-align: center;
+	color: white;
+	padding-top: 19px;
+	padding-bottom: 19px;
+	background: rgba(0,0,0,0.6);
+}
+
+.form_box{
+	margin-top: 2px;
+	height: 548px;
+	background: rgba(0,0,0,0.6);
+	color: white;
+	text-align: center;
+}
+
+.facebook_button img{
+	margin-top: 25px;
+}
+
+fieldset{
+	border-top: 2px solid #666666;
+	width: 276px;
+	margin-left: 142px;
+	margin-top: 20px;
+}
+
+legend{
+	margin-left: 122px;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+.input_items input{
+	display: block;
+	width: 259px;
+	height: 35px;
+	margin-top: 17px;
+	margin-left: 142px;
+	border: none;
+	outline: none;
+	font-size: 14px;
+	padding-left: 18px;
+	background-color: black;
+	color: white;
+}
+
+.input_items input:focus{
+	background-color: #1b5288;
+	-webkit-box-shadow: 0px 0px 3px 3px rgba(80,160,214,1);
+	-moz-box-shadow: 0px 0px 3px 3px rgba(80,160,214,1);
+	box-shadow: 0px 0px 3px 3px rgba(80,160,214,1);
+}
+
+.site_updates_checkbox{
+	margin-right: 45px;
+	font-size: 14px;
+}
+
+.site_updates_checkbox, .credits{
+	margin-top: 25px;
+}
+
+button[type="submit"]{
+	width: 152px;
+	height: 36px;
+	border: none;
+	margin-top: 20px;
+	font-size: 14px;
+	color: white;
+	background:url(../img/buttons.png);
+	cursor: pointer;
+}
+
+button[type="submit"]:hover{
+	background-image: url(../img/registration_hov.png);
+}
+
+button[type="submit"]:active{
+	line-height: 40px;
+}
+
+.credits{
+	font-size: 11px;
+}

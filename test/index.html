@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Homework-JS-21-22</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="script/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="script/tmpl.js"></script>
+	<script type="text/javascript" src="script/script.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<script type="text/template" id="testBox">
+			<form action="#" method="POST">
+				
+				<span class="test__name"><%= title %></span>
+				
+				<% for (let i = 0; i < data.length; i++) { %>
+				<ul class="question__block<%= [i+1] %>">
+					<span><%= (i+1)%>. <%= data[i].question %></span>
+					<% for (let j = 0; j < data[i].answers.length; j++) { %>
+					<li>
+						<input type="checkbox" id="answer_<%= (i + 1)%>_<%= (j + 1)%>">
+						<label for="answer_<%= (i + 1)%>_<%= (j + 1)%>"><%= (j + 1) + '. ' + data[i].answers[j] %></label>
+					</li>
+					<% }; %>
+				</ul>
+				<% }; %>
+
+
+				<button type="submit">Проверить мои результаты</button>
+
+				<div class="popup__overlay">
+					<div class="popup">
+						<span class="popup__title">Результат <%= title %>а</span>
+						<span class="summary"></span>
+						<button type="ok">Ok</button>
+					</div>
+
+				</div>
+			</form>
+
+		</script>
+	</div>
+
+</body>
+</html>
